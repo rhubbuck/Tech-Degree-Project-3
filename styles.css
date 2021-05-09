@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: .89em;
+    font-family: 'Poppins', sans-serif;
+}
+h1, legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.title {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 1.5em;
+    padding: 1em 0;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    padding-top: 1em;
+}
+.intro {
+    border-bottom: solid black 4px;
+}
+form {
+    border-top: solid black 1px;
+    padding: 1em 0;
+    margin-top: .5em;
+    background-color: rgba(224, 30, 241, 0.322);
+}
+fieldset {
+    border: none;
+    padding: 0;
+}
+body {
+    padding: 0 .5em;
+}
+footer {
+    text-align: center;
+    font-size: .7em;
+}
+.contact-section {
+    border-bottom: solid black 1px;
+    padding-bottom: 1em;
+}
+.contact-section label {
+    display: block;
+    max-width: 100%;
+}
+.contact-section input, 
+.contact-section select {
+    height: 2.7em;
+    display: block;
+    border: none;
+    background-color: rgb(243, 240, 240); 
+    border-radius: 3%;
+    width: 100%;
+    padding:.5em 0;
+    margin-top: .4em;
+    margin-bottom: 1em;
+}
+#name, #email::placeholder {
+    text-align: right;
+}
+::placeholder,
+select {
+    color:rgb(161, 158, 158);
+    font-size: .9em;
+}
+textarea, button {
+    min-width: 100%;
+    border-radius: .8em;
+}
+textarea {
+    height: 4em;
+    margin: .9em 0;
+}
+button {
+    height: 3em;
+    background-color:rgba(171, 33, 226, 0.774);
+    color: white;
+}
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus{
+    outline: 3px solid rgba(171, 33, 226, 0.774);
+    transition-duration: .2s;
+}
+.intro {
+    background-color: rgba(224, 30, 241, 0.322);
+}
+legend {
+    padding: 1em 0;
+}
+#newsletter input,
+#newsletter label {
+    padding: .8em 5px;
+    margin: .8em 5px;
+}
+textarea {
+    background-color: rgb(243, 240, 240);
+    border: none;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+    .intro,
+    form {
+        margin: 0 4em;
+    }
+    form {
+        margin-top: .5em;
+    }
+    .contact-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contact-section input,
+    .contact-section select {
+        width: 75%;
+    }
+    .contact-section label {
+        width: 25%;
+    }
+    #zip {
+        width: 25%;
+    }
+}
